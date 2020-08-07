@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\Exceptions\TokenExpiredException;
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;
-use Tymon\JWTAuth\JWTAuth;
+use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
 class UserController extends Controller
@@ -36,9 +36,11 @@ class UserController extends Controller
             'surname' => 'required|string|max:255',
             'city' => 'required|string|max:255',
             'street' => 'required|string|max:255',
-            'phone' => 'required|numeric|phone_number|size:11',
+            'phone' => 'required',
             'password' => 'required|string|min:6|confirmed',
-            'passport' => 'required|regex:/(?:[IVX]{2}[0-9]{2}\-[А-Я]{2}|[0-9]{4}\s*[0-9]{3}\s*[0-9]{3})|unique:users'
+            'passport' => 'required|unique:users'
+            //regex:/(?:[IVX]{2}[0-9]{2}\-[А-Я]{2}|[0-9]{4}\s*[0-9]{3}\s*[0-9]{3})\/
+//            |regex:/(+7)[0-9]{9}/
         ]);
 
         if($validator->fails()){
@@ -55,7 +57,7 @@ class UserController extends Controller
             'email' => $request->get('email'),
             'password' => Hash::make($request->get('password')),
         ]);
-        $custom_claims = []
+        $custom_claims = [];
         $token = JWTAuth::fromUser($user);
 
         return response()->json(compact('user','token'),201);

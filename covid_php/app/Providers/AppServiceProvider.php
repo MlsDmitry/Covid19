@@ -26,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Validator::extend('phone_number', function($attribute, $value, $parameters)
         {
+            var_dump($value);
             return substr($value, 0, 2) == '+7';
         });
     }
