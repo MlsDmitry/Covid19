@@ -19,7 +19,6 @@ class JwtMiddleware
     {
         try {
             $user = JWTAuth::parseToken()->authenticate();
-            return response()->json($user);
         } catch (Exception $e) {
             if ($e instanceof \Tymon\JWTAuth\Exceptions\TokenInvalidException){
                 return response()->json(['status' => 'Token is Invalid']);
