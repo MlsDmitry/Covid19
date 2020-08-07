@@ -94,7 +94,8 @@ class UserController extends Controller
 
     public function getPreferences()
     {
-        $pref = JWTAuth::user()->getPreferences();
+        $pref = JWTAuth::user()->with('preferences')->get();
+        $pref = $pref->toArray();
         return response()->json(compact('pref'));
     }
 }

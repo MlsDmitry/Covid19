@@ -14,4 +14,6 @@ class Preferences extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+
 }

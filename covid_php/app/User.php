@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
+use function GuzzleHttp\Promise\all;
 
 class User extends Authenticatable implements JWTSubject
 {
@@ -48,7 +49,7 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-    public function getPreferences() {
-        return $this->hasOne('App\Preferences', 'user_id', 'id');
+    public function preferences() {
+        return $this->hasOne(Preferences::class, 'user_id', 'id');
     }
 }
