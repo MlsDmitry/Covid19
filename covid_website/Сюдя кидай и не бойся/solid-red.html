@@ -1,0 +1,752 @@
+<html class="csstransforms csstransforms3d csstransitions js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">.fancybox-margin{margin-right:17px;}</style><style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style><style type="text/css">.fancybox-margin{margin-right:17px;}</style><style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style></head><body data-target="#menu-section" data-spy="scroll"><div class="row text-center header align-items-center">
+
+﻿
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<title>Ковид19CTF.рф</title>
+<!-- BOOTSTRAP CORE CSS -->
+<link href="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/bootstrap.css" rel="stylesheet">
+<!-- ION ICONS STYLES -->
+<link href="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/ionicons.css" rel="stylesheet">
+<!-- FONT AWESOME ICONS STYLES -->
+<link href="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/font-awesome.css" rel="stylesheet">
+<!-- FANCYBOX POPUP STYLES -->
+<link href="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/jquery.css" rel="stylesheet">
+<!-- STYLES FOR VIEWPORT ANIMATION -->
+<link href="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/animations.css" rel="stylesheet">
+<!-- CUSTOM CSS -->
+<link href="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/style-solid-red.css" rel="stylesheet">
+<!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<!--MENU SECTION START-->
+<div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">
+
+Ковид-19 CTF.рф
+
+</a>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#home" style="outline: none">Главная</a></li>
+<li><a href="#services" style="outline: none">Информация</a></li>
+<li><a href="#work" style="outline: none">Записаться на прием</a></li>
+<!--<li><a href="#team">TEAM</a></li>-->
+<li class="active"><a href="#contact" style="outline: none">Контакты</a></li>
+<li><a href="http://gz.mezerus.pw/template/loginbtm.html" style="outline: none">Войти</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<!--MENU SECTION END-->
+<!--HOME SECTION START-->
+<div id="home">
+<div class="container">
+<div class="row">
+<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
+<div id="carousel-slider" data-ride="carousel" class="carousel slide" data-anim-type="fade-in-up">
+
+<div class="carousel-inner">
+<div class="item active">
+
+<h3>
+Названы противопоказания к вакцине от коронавируса
+</h3>
+<p type="news">
+Ученые назвали случаи, в которых гражданам рекомендуется отказаться от прививки.
+</p>
+</div>
+<div class="item" style="padding-bottom: 25px;">
+<h3>
+Актуальные новости по COVID - 19
+</h3>
+<p>
+Lorem ipsumdolor sitamet, consect adipiscing elit
+Lorem ipsumdolor sitamet, consect adipiscing elit.
+Lorem ipsumdolor sitamet, consect adipiscing elit
+Lorem ipsumdolor sitamet, consect adipiscing elit.
+</p>
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+<div class="row" data-anim-type="fade-in-up">
+<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
+
+
+<p>
+This line is fixed so you can write anything
+
+</p>
+<div class="social">
+<a href="#" class="btn button-custom btn-custom-one"><i class="vk https://vk.com "></i></a>
+</div>
+<a href="#services" class=" btn button-custom btn-custom-two">Посмотреть возможности </a>
+</div>
+</div>
+</div>
+
+</div>
+<!--HOME SECTION END-->
+<!--SERVICE SECTION START-->
+<section id="services">
+<div class="container">
+<div class="row text-center header align-items-center">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animating &lt;fade-in-up" data-anim-type="&lt;fade-in-up">
+<!--<h3>Наши службы</h3>
+<hr />
+</div>
+</div>
+<div class="row animate-in" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper">
+<i class="ion-document"></i>
+<h3>Бумага</h3>
+инфа о инфе с инфой про инфу для инфы
+</div>-->
+<!-- </div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper">
+<i class="ion-scissors"></i>
+<h3>Consectetur tellus nec</h3>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
+</div> -->
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper" style="padding-bottom: 27px;">
+<i class="ion-clipboard"></i>
+<h3>Видем запись</h3>
+Личный кабинет, в котором будут указаны ваши данные
+и время приемов
+<br><br>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper">
+<i class="ion-calendar"></i>
+<h3>Я календарь переверну... </h3>
+Точность привыше всего, благодаря личного кабинета
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper" style="padding-bottom: 27px;">
+<i class="ion-erlenmeyer-flask"></i>
+<h3>Лаборатории</h3>
+Все аналализы из лабораторий вы можете посмотреть в своем личном кабинете
+</div>
+</div>
+</div>
+<div class="row text-center header align-items-center">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper" style="padding-bottom: 28px;">
+<i class="ion-monitor"></i>
+<h3>Широкий экран</h3>
+Мы оптимизировали наш сайт так чтобы вам было удобно его использовать
+<br><br>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper">
+<i class="ion-map"></i>
+<h3>БЛИЖАЙШАЯ СКОРАЯ ПОМОЩЬ</h3>
+Ниже вы можете наблюдать карту с ближайшемы мед. учереждениями
+</div>
+</div>
+<!--<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper">
+<i class="ion-tshirt-outline"></i>
+<h3>Consectetur tellus nec</h3>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
+</div>
+</div>-->
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="services-wrapper">
+<i class="ion-speedometer"></i>
+<h3 style="padding-bottom: 7px;">СКОРОСТЬ!</h3>
+Мобильность и компактность!
+ Ничего лишнего,только самое полезное.
+<br><br>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--SERVICE SECTION END-->
+<!--PRICING SECTION START-->
+
+<div style="position:relative;overflow:hidden;">
+    <a href="https://yandex.ru/maps/213/moscow/search/%D0%91%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Больницы в Москве</a>
+    <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва</a>
+    <iframe src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/CCQp6PQU-D.html" allowfullscreen="true" style="position:relative;" width="960" height="600" frameborder="1">
+    </iframe>
+</div>
+
+<!--<section id="pricing" >
+<div class="container">
+<div class="row text-center header animate-in" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h3>Pricing Options</h3>
+<hr />
+</div>
+</div>
+<div class="row pad-bottom animate-in" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+<div class="row db-padding-btm db-attached">
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="light-pricing">
+<div class="price">
+<sup>$</sup>99
+<small>per day</small>
+</div>
+<div class="type">
+BASIC
+</div>
+<ul>
+
+<li><i class="glyphicon glyphicon-print"></i>30+ Accounts </li>
+<li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
+<li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+</ul>
+<div class="pricing-footer">
+
+<a href="#" class="btn button-custom btn-custom-one">BOOK ORDER</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="light-pricing popular">
+<div class="price">
+<sup>$</sup>199
+<small>per month</small>
+</div>
+<div class="type">
+MEDIUM
+</div>
+<ul>
+
+<li><i class="glyphicon glyphicon-print"></i>30+ Accounts </li>
+<li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
+<li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+</ul>
+<div class="pricing-footer">
+
+<a href="#" class="btn button-custom btn-custom-one">BOOK ORDER</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="light-pricing">
+<div class="price">
+<sup>$</sup>249
+<small>per yer</small>
+</div>
+<div class="type">
+ADVANCE
+</div>
+<ul>
+
+<li><i class="glyphicon glyphicon-print"></i>30+ Accounts </li>
+<li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
+<li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+</ul>
+<div class="pricing-footer">
+
+<a href="#" class="btn button-custom btn-custom-one">BOOK ORDER</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="light-pricing">
+<div class="price">
+<sup>$</sup>599
+<small>one time</small>
+</div>
+<div class="type">
+EXTENDED
+</div>
+<ul>
+
+<li><i class="glyphicon glyphicon-print"></i>30+ Accounts </li>
+<li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
+<li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+</ul>
+<div class="pricing-footer">
+
+<a href="#" class="btn button-custom btn-custom-one">BOOK ORDER</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row animate-in" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+<div class="row db-padding-btm db-attached">
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="light-pricing ">
+<div class="price">
+<sup>$</sup>99
+<small>per day</small>
+</div>
+<div class="type">
+SMALL
+</div>
+<ul>
+
+<li><i class="glyphicon glyphicon-print"></i>30+ Accounts </li>
+<li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
+<li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+</ul>
+<div class="pricing-footer">
+
+<a href="#" class="btn button-custom btn-custom-one">BOOK ORDER</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="light-pricing popular">
+<div class="price">
+<sup>$</sup>159
+<small>per month</small>
+</div>
+<div class="type">
+MEDIUM
+</div>
+<ul>
+
+<li><i class="glyphicon glyphicon-print"></i>30+ Accounts </li>
+<li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
+<li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+</ul>
+<div class="pricing-footer">
+
+<a href="#" class="btn button-custom btn-custom-one">BOOK ORDER</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="light-pricing">
+<div class="price">
+<sup>$</sup>799
+<small>per month</small>
+</div>
+<div class="type">
+ADVANCE
+</div>
+<ul>
+
+<li><i class="glyphicon glyphicon-print"></i>30+ Accounts </li>
+<li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
+<li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+</ul>
+<div class="pricing-footer">
+
+<a href="#" class="btn button-custom btn-custom-one">BOOK ORDER</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--PRIICING SECTION END-->
+<!--WORK SECTION START-->
+<section id="work">
+<div class="container">
+<div class="row text-center header" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h3>Что-то</h3>
+<hr>
+</div>
+</div>
+<div class="row text-center" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pad-bottom">
+<div class="caegories">
+<a href="#" data-filter="*" class="btn btn-custom btn-custom-two btn-sm active">All</a>
+<a href="#" data-filter=".html" class="btn btn-custom btn-custom-two btn-sm">HTML</a>
+<a href="#" data-filter=".css" class="btn btn-custom btn-custom-two btn-sm">CSS</a>
+<a href="#" data-filter=".code" class="btn btn-custom btn-custom-two btn-sm">CODE</a>
+<a href="#" data-filter=".script" class="btn btn-custom btn-custom-two btn-sm">SCRIPT</a>
+</div>
+</div>
+</div>
+<div class="row text-center isotope" data-anim-type="fade-in-up" id="work-div" style="position: relative; overflow: hidden; height: 646px;">
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); opacity: 1;">
+<div class="work-wrapper">
+
+<a class="fancybox-media" title="Image Title Goes Here" href="http://gz.mezerus.pw/template/assets/img/portfolio/1.jpg">
+
+<img src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/1.jpg" class="img-responsive img-rounded" alt="">
+</a>
+
+<h4>Morbi mollis lectus et ipsum</h4>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html css isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(390px, 0px, 0px) scale3d(1, 1, 1); opacity: 1;">
+<div class="work-wrapper">
+
+<a class="fancybox-media" title="Image Title Goes Here" href="http://gz.mezerus.pw/template/assets/img/portfolio/2.jpg">
+
+<img src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/2.jpg" class="img-responsive img-rounded" alt="">
+</a>
+
+<h4>Morbi mollis lectus et ipsum</h4>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 code script isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(780px, 0px, 0px) scale3d(1, 1, 1); opacity: 1;">
+<div class="work-wrapper">
+
+<a class="fancybox-media" title="Image Title Goes Here" href="http://gz.mezerus.pw/template/assets/img/portfolio/3.jpg">
+
+<img src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/3.jpg" class="img-responsive img-rounded" alt="">
+</a>
+
+<h4>Morbi mollis lectus et ipsum</h4>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html script isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 323px, 0px) scale3d(1, 1, 1); opacity: 1;">
+<div class="work-wrapper">
+
+<a class="fancybox-media" title="Image Title Goes Here" href="http://gz.mezerus.pw/template/assets/img/portfolio/4.jpg">
+
+<img src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/4.jpg" class="img-responsive img-rounded" alt="">
+</a>
+
+<h4>Morbi mollis lectus et ipsum</h4>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html code isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(390px, 323px, 0px) scale3d(1, 1, 1); opacity: 1;">
+<div class="work-wrapper">
+
+<a class="fancybox-media" title="Image Title Goes Here" href="http://gz.mezerus.pw/template/assets/img/portfolio/5.jpg">
+
+<img src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/5.jpg" class="img-responsive img-rounded" alt="">
+</a>
+
+<h4>Morbi mollis lectus et ipsum</h4>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 script isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(780px, 323px, 0px) scale3d(1, 1, 1); opacity: 1;">
+<div class="work-wrapper">
+
+<a class="fancybox-media" title="Image Title Goes Here" href="http://gz.mezerus.pw/template/assets/img/portfolio/6.jpg">
+
+<img src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/6.jpg" class="img-responsive img-rounded" alt="">
+</a>
+
+<h4>Morbi mollis lectus et ipsum</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--WORK SECTION END-->
+<!--TEAM SECTION START-->
+<!--<section id="team" >
+<div class="container">
+<div class="row text-center header animate-in" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h3>Team Members </h3>
+<hr />
+</div>
+</div>
+<div class="row animate-in" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="team-wrapper">
+<div class="team-inner" style="background-image: url('assets/img/team/1.jpg')" >
+<a href="#" target="_blank" > <i class="fa fa-twitter" ></i></a>
+</div>
+<div class="description">
+<h3> Leomarid Jona</h3>
+<h5> <strong> Developer & Designer </strong></h5>
+<p>
+Pellentesque elementum dapibus convallis.
+Vivamus eget finibus massa.
+</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="team-wrapper">
+<div class="team-inner" style="background-image: url('assets/img/team/2.jpg')" >
+<a href="#" target="_blank" > <i class="fa fa-twitter" ></i></a>
+</div>
+<div class="description">
+<h3> Leomarid Jona</h3>
+<h5> <strong> Developer & Designer </strong></h5>
+<p>
+Pellentesque elementum dapibus convallis.
+Vivamus eget finibus massa.
+</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="team-wrapper">
+<div class="team-inner" style="background-image: url('assets/img/team/3.jpg')" >
+<a href="#" target="_blank" > <i class="fa fa-twitter" ></i></a>
+</div>
+<div class="description">
+<h3> Leomarid Jona</h3>
+<h5> <strong> Developer & Designer </strong></h5>
+<p>
+Pellentesque elementum dapibus convallis.
+Vivamus eget finibus massa.
+</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="team-wrapper">
+<div class="team-inner" style="background-image: url('assets/img/team/4.jpg')" >
+<a href="#" target="_blank" > <i class="fa fa-twitter" ></i></a>
+</div>
+<div class="description">
+<h3> Leomarid Jona</h3>
+<h5> <strong> Developer & Designer </strong></h5>
+<p>
+Pellentesque elementum dapibus convallis.
+Vivamus eget finibus massa.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--TEAM SECTION END-->
+<!--GRID SECTION START-->
+<!--KEKPUK--
+<section id="grid" >
+<div class="container">
+<div class="row text-center header animate-in" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<h3>Grid Overview </h3>
+<hr />
+
+</div>
+</div>
+<div class="row pad-bottom animate-in" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<h2>1/4 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<h2>1/4 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<h2>1/4 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<h2>1/4 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+</div>
+<div class="row pad-bottom animate-in" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<h2>1/3 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<h2>1/3 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<h2>1/3 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+
+</div>
+<div class="row pad-bottom animate-in" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<h2>1/2 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<h2>1/2 Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+
+
+</div>
+<div class="row animate-in" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>Full Section</h2>
+<p>
+Morbi mollis lectus et ipsum sollicitudin varius.
+Aliquam tempus ante placerat,
+consectetur tellus nec, porttitor nulla.
+</p>
+
+</div>
+
+
+
+</div>
+</div>
+</section>
+<!--PUKKEK-->
+<!--GRID SECTION END-->
+<!--CONTACT SECTION START-->
+<section id="contact">
+<div class="container">
+<div class="row text-center header" data-anim-type="fade-in-up">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<h3>Наши контакты</h3>
+<hr>
+
+</div>
+</div>
+
+<div class="row" data-anim-type="fade-in-up">
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="contact-wrapper">
+<h3>Мы в Соц.Сетях</h3>
+
+<div class="social-below">
+<a href="#" class="btn button-custom btn-custom-two"> Facebook</a>
+<a href="#" class="btn button-custom btn-custom-two"> Twitter</a>
+<a href="#" class="btn button-custom btn-custom-two"> Google +</a>
+</div>
+</div>
+
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="contact-wrapper">
+<h3>Напишите нам</h3>
+<h4><strong>Email : </strong> covid19@ctf.ru </h4>
+<h4><strong style="padding-left: 10px;">Телефон:</strong> +7(666)322-13-37 </h4>
+<h4><strong style="padding-left: 5px;">Skype : </strong> covid19@ctf.ru </h4>
+</div>
+
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="contact-wrapper">
+<h3>Наш адрес:</h3>
+<h4>8 летняя школа CTF</h4>
+<h4>г. Звенигород</h4><h4>шале-отель Таежные дачи</h4>
+<div class="footer-div" style="margin-top: 300px; left: 50px;">
+© 2020LetoCTF<a href="http://www.designbootstrap.com/" target="_blank">by DesignBootstrp</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+</section>
+<!--CONTACT SECTION END-->
+
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->
+<!-- CORE JQUERY -->
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/jquery-1.js"></script>
+<!-- BOOTSTRAP SCRIPTS -->
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/bootstrap.js"></script>
+<!-- EASING SCROLL SCRIPTS PLUGIN -->
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/jquery_004.js"></script>
+<!-- VEGAS SLIDESHOW SCRIPTS -->
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/jquery_002.js"></script>
+<!-- FANCYBOX PLUGIN -->
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/jquery_003.js"></script>
+<!-- ISOTOPE SCRIPTS -->
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/jquery.js"></script>
+<!-- VIEWPORT ANIMATION SCRIPTS   -->
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/appear.js"></script>
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/animations.js"></script>
+<!-- CUSTOM SCRIPTS -->
+<script src="%D0%9A%D0%BE%D0%B2%D0%B8%D0%B419CTF.%D1%80%D1%84_files/custom-solid.js"></script>
+
+
+
+</div></body></html>

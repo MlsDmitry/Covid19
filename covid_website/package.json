@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/MlsDmitry/Covid19/issues"
   },
-  "homepage": "https://github.com/MlsDmitry/Covid19#readme"
+  "homepage": "https://github.com/MlsDmitry/Covid19#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
+  }
 }
