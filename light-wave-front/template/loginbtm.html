@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru" class="no-js" >
 <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -46,12 +50,14 @@ img.avatar {
 }
 
 .container {
-  padding: 16px;
+  padding: 32px;
 }
+
+button::-moz-focus-inner { border: 0; }
+
 
 span.psw {
   float: right;
-  padding-top: 16px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -68,16 +74,12 @@ span.psw {
 </head>
 <body>
 
+<h3><p align="center" style="font-weight:normal; font-size:12px">#БЕРЕГИТЕСЕБЯ</p></h3>
 <h2><p align="center">Авторизация</p></h2>
-
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png">
-  </div>
-
+<form>
   <div class="container">
-    <label for="uname"><b>Имя пользователя</b></label>
-    <input type="text" placeholder="Введите имя пользователя" name="uname" required>
+    <label for="uname"><b>Электронная почта</b></label>
+    <input type="text" placeholder="Email" name="uname" required>
 
     <label for="psw"><b>Пароль</b></label>
     <input type="password" placeholder="Введите пароль" name="psw" required>
@@ -88,10 +90,10 @@ span.psw {
     </label>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
+  <div class="container" style="background-color:#dfdfdf; size=12px">
     <!--<button type="button" class="cancelbtn" <a href="solid-red.html"></a> Отмена</button>-->
-    <span class="reg"><a href="#">Регистрация?</a></span>
-    <span class="psw">Забыли <a href="#">пароль?</a></span>
+    <span class="reg"><a href="regestration/regbtm.html">Регистрация</a></span>
+    <span class="psw"><a href="#">Забыли пароль?</a></span>
   </div>
 </form>
 

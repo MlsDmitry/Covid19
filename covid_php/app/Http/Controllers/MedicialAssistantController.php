@@ -21,14 +21,15 @@ class MedicialAssistantController extends Controller
         }
         $user = Auth::user();
         $pref = $user->preferences();
-        $scheduled = new DateTime($date_time);
+        $format = DateTime::format('m/d/Y h:i:s a');
+        $scheduled = DateTime::createFromFormat($format, $date_time);
         if ($pref->notify_vaccinations == 1){
             $mail = new NotifyVaccination(['user' => $user]);
             Mail::to($user->email)->later($scheduled->diff($scheduled->sub(new \DateInterval('P1D'))), $mail);
         }
         if($pref->notify_re_vaccinations == 1) {
             $mail = new NotifyReVaccination(['user' => $user]);
-            Mail::to($user->email)->later($scheduled->diff($scheduled->sub(new \DateInterval('P1D'))), $mail);
+            Mail::to($user->email)->later($scheduled->diff($scheduled->sub(new \DateInterval('P15D'))), $mail);
         }
         Vaccination::create([
             'user_id' => $user->id,
@@ -41,3 +42,29 @@ class MedicialAssistantController extends Controller
 //    public function delete()
 
 }
+
+/*
+ *
+ * $(function(){
+    var store = store || {};
+
+    /*
+     * Sets the jwt to the store object
+     */
+store.setJWT = function(data){
+    this.JWT = data;
+}
+
+    /*
+     * Submit the login form via ajax
+     */
+	$("#frmLogin").submit(function(e){
+        e.preventDefault();
+        $.post('auth/token', $("#frmLogin").serialize(), function(data){
+            store.setJWT(data.JWT);
+        }).fail(function(){
+            alert('error');
+        });
+    });
+});
+ */

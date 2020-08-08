@@ -99,6 +99,9 @@ color: #fff;
 background-color: transparent;
 }
 
+li.a{
+    outline:none;
+}
 
 /* =============================================================
 MENU SECTION STYLES
