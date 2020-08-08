@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CriticalNews;
+use App\Mail\Personal;
+use App\Mail\Stats;
 use App\Preferences;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\Exceptions\TokenExpiredException;
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;
 use JWTAuth;
+use Carbon\Carbon;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
 class UserController extends Controller
@@ -19,7 +25,7 @@ class UserController extends Controller
         $credentials = $request->only('email', 'password');
 
         try {
-            if (!$token = JWTAuth::attempt($credentials)) {
+            if (!$token = JWTAuth::attempt($credentials, ['exp' => Carbon::now()->addHour()])) {
                 return response()->json(['error' => 'invalid_credentials'], 400);
             }
         } catch (JWTException $e) {
@@ -91,11 +97,22 @@ class UserController extends Controller
 
         return response()->json(compact('user'));
     }
-
-    public function getPreferences()
-    {
-        $pref = JWTAuth::user()->with('preferences')->get();
-        $pref = $pref->toArray();
-        return response()->json(compact('pref'));
+    public function sendMail(Request $request) {
+        switch ($request->get('id')){
+            case 'critical_news':
+                $mail = new CriticalNews([]);
+                break;
+            case 'stats':
+                $mail = new Stats([]);
+                break;
+            case 'personal':
+                $mail = new Personal(['user' => Auth::user()]);
+                break;
+        }
+        try {
+            Mail::to(Auth::user()->email)->send($mail);
+        } catch (\Exception $e) {
+            echo 'Error -> '. $e;
+        }
     }
 }

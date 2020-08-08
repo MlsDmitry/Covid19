@@ -128,6 +128,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
       <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/mashape/unirest-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fmFQI5HLjLN7zzjVg6JEQiZ14Y" />
@@ -141,6 +142,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/emails" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -156,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596815345960</updated>
-      <workItem from="1596815347495" duration="11843000" />
+      <workItem from="1596815347495" duration="24953000" />
     </task>
     <servers />
   </component>
@@ -168,6 +174,18 @@
       <screen x="0" y="23" width="1396" height="877" />
     </state>
     <state x="504" y="150" key="#com.intellij.ide.util.MemberChooser/0.23.1396.877@0.23.1396.877" timestamp="1596816334517" />
+    <state x="436" y="223" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596839983497">
+      <screen x="0" y="23" width="1399" height="877" />
+    </state>
+    <state x="436" y="223" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1399.877@0.23.1399.877" timestamp="1596839983497" />
+    <state x="334" y="194" key="NewPhpClassDialog" timestamp="1596847234923">
+      <screen x="0" y="23" width="1397" height="877" />
+    </state>
+    <state x="334" y="194" key="NewPhpClassDialog/0.23.1397.877@0.23.1397.877" timestamp="1596847234923" />
+    <state x="496" y="442" key="NewPhpFileDialog" timestamp="1596847303679">
+      <screen x="0" y="23" width="1397" height="877" />
+    </state>
+    <state x="496" y="442" key="NewPhpFileDialog/0.23.1397.877@0.23.1397.877" timestamp="1596847303679" />
     <state x="364" y="213" width="672" height="676" key="search.everywhere.popup" timestamp="1596833410418">
       <screen x="0" y="23" width="1399" height="877" />
     </state>
